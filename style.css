@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: radial-gradient(#1b2728, #000 70%);
+}
+
+h1{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 120px;
+    font-weight: 900;
+    text-align: center;
+    background-image: linear-gradient(to right, red, yellow);
+    margin-bottom: 50px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid .col{
+    background: rgba(255, 255, 255, .05);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 40px;
+    gap: 5px;
+    transition: transform 0.3s;
+}
+
+.grid .col:hover{
+    transform: scale(1.04);
+}
+
+.grid .col:first-child{
+    border-radius: 40px 5px 5px 40px;
+}
+
+.grid .col:last-child{
+    border-radius: 5px 40px 40px 5px;
+}
+.grid .col h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.grid .col p{
+    font-size: 16px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.grid .col button{
+    height: 40px;
+    background-color: #fff;
+    padding: 0 25px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.grid .col button:hover {
+    background-color: #cac9c9;
+}
